@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  min-height: 100vh; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4ebf5 100%); 
+  padding-top: 40px; 
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.restaurant-logo {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1b5e20;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.restaurant-tagline {
+  font-size: 1rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.menu-container {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center; 
+  gap: 15px; 
+  padding: 15px; 
+  width: auto; 
+  max-width: 600px;
+  background-color: transparent;
+  margin-bottom: 25px; 
+}
+
+.menu-item {
+  width: 140px; 
+  border-radius: 30px; 
+  background-color: #4CAF50;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.2); 
+}
+
+.menu-item a {
+  display: block; 
+  padding: 12px 0;
+  color: white;
+  text-decoration: none; 
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.menu-item:hover {
+  background-color: #43a047;
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 14px rgba(76, 175, 80, 0.3);
+}
+
+.menu-item.active {
+  background-color: #2E7D32;
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.15);
+}
+.content-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05), 0 5px 15px rgba(0,0,0,0.03);
+  max-width: 550px;
+  width: 90%;
+  text-align: center;
+  color: #333;
+  box-sizing: border-box;
+  border-top: 6px solid #2E7D32; 
+}
+
+.content-box h2 {
+  margin-top: 0;
+  color: #2E7D32;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.content-box h3 {
+  color: #2E7D32;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.content-box p {
+  line-height: 1.7;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.separator {
+  border: 0;
+  border-top: 1px solid #eaeaea;
+  margin: 25px 0;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.menu-table td {
+  padding: 14px 10px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #444;
+}
+
+.opening-hours-table {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.time-cell {
+  text-align: right;
+  font-weight: 600;
+  color: #2e7d32; 
+  white-space: nowrap;
+}
+
+.reservation-cta {
+  background-color: #f9fbf9; 
+  padding: 20px;
+  border-radius: 14px;
+  margin-top: 30px;
+  border: 1px solid #edf4ed;
+}
+
+.reservation-cta h4 {
+  margin-top: 0;
+  color: #2E7D32;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.reservation-cta p {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.cta-button {
+  margin: 0 auto;
+  width: 190px;
+}
+
+.reservation-form { display: flex; flex-direction: column; text-align: left; gap: 12px; margin-top: 20px; }
+.reservation-form label { font-weight: 600; color: #555; margin-bottom: -4px; }
+.reservation-form input[type="text"], .reservation-form input[type="email"], .reservation-form input[type="number"], .reservation-form input[type="datetime-local"], .reservation-form select, .reservation-form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem; font-family: inherit; background-color: white; box-sizing: border-box; width: 100%; }
+.reservation-form textarea { resize: vertical; }
+.checkbox-group { display: flex; align-items: center; gap: 8px; margin-bottom: 2px; }
+.checkbox-group input[type="checkbox"] { width: auto; margin: 0; cursor: pointer; }
+.checkbox-group label { font-weight: normal; color: #333; cursor: pointer; margin: 0; }
+.form-buttons { display: flex; gap: 10px; margin-top: 15px; }
+.prase { flex: 1; padding: 12px; border: none; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: background 0.2s, transform 0.1s; }
+.prase:active { transform: scale(0.98); }
+.btn-submit { background-color: #4CAF50; color: white; }
+.btn-submit:hover { background-color: #45a049; }
+.btn-reset { background-color: #e0e0e0; color: #333; }
+.btn-reset:hover { background-color: #d5d5d5; }
+.menu-page { max-width: 600px; text-align: left; }
+.menu-page h1 { text-align: center; }
+.menu-section-title { color: #2E7D32; border-left: 4px solid #4CAF50; padding-left: 10px; margin-top: 35px; margin-bottom: 10px; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 0.5px; }
